@@ -4,20 +4,20 @@
     <!-- Defino codificación -->
     <meta charset="UTF-8" />
 
-    <!-- Defino escala de la página -->
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Conecto con las fuentes de Google -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Uso la fuente Roboto -->
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Uso Font Awesome para íconos del sitio -->
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -26,30 +26,31 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Conecto mi HTML con el archivo de CSS para los estilos -->
+    
     <link rel="stylesheet" href="/css/style.css">
 
-    <!-- Conecto mi HTML con el archivo de CSS para los estilos normales -->
+    
     <link rel="stylesheet" href="/css/normalize.css">
 
-    <!-- Defino un título a mi página que se visualizará arriba -->
+    
     <title>Registro de Usuario</title>
   </head>
 
   <!-- Body -->
-  <!-- Definimos un selector de clase que afectará al body para el color -->
+  
   <body class="bgLightgrey">
 
-    <!-- Header -->
-    <!-- Definimos un selector de clase que afectará al header para el color -->
+   
     <header class="bgYellow">
 
-    <!-- Definimos un selector de clase que afectará al header para alinear -->
+    
       <div class="topHeader">
 
-        <!-- Definimos un selector de clase que afectará al logo -->
+        
+        
         <h1 class="logoML">    
-        <!-- Usamos la siguiente imagen para el header -->
+        
+        
         <a href="/">
           <img
           src="/images/logo-mercado-liebre.svg"
@@ -58,7 +59,7 @@
         </a>
         </h1>
 
-        <!-- Creo la barra de búsqueda -->
+        
         <form class="searchNav" action="" method="" role="search">
           <input type="text" placeholder="Buscar productos, marcas y más…" 
           maxlength="120" autocapitalize="off" spellcheck="false" 
@@ -66,7 +67,7 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </form>
 
-        <!-- MercadoCrédito -->
+        
         <p class="credit">
           <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin
           tarjeta de crédito
@@ -76,7 +77,7 @@
 
       
 
-      <!-- Menú de navegación con links -->
+      
       <nav>
         <ul>
         <li>
@@ -91,7 +92,7 @@
           <li><a href="">Ayuda</a></li>
         </ul>
 
-        <!-- Más menús -->
+        
         <ul>
           <li>
             <a href="register.html">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a>
@@ -104,56 +105,53 @@
           </li>
         </ul>
 
-        <!-- Creo el menú hamburguesa -->
+        
         <div class="burger-menu">
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
 
-        <!-- Imagen navidad promociones la comento para que no aparezca -->
-      <!-- <img class="christmas"
-            src="/images/img-home-banner.jpg"
-            alt="img-home-banner"
-          /> -->
+        
+      
     </header>
 
-    <!-- Main -->
+    
     <main>
 
-      <!-- Creo el formulario -->
+      
       <form action="/">
 
-        <!-- Creo el div con clase fullName para apellido y nombre -->
+        
         <div class="fullName">
           <label for="nameAndLastname"></label>
           <input type="text" name="nameAndLastname" id="nameAndLastname" placeholder="Nombre y apellido" required minlength="2" maxlength="30">
         </div>
 
-        <!-- Creo el div con clase user para el usuario -->
+        
         <div class="user">
           <label for="userName"></label>
           <input type="text" name="userName" id="userName" placeholder="Nombre de usuari@" required minlength="5" maxlength="12">
         </div>
 
-        <!-- Creo el div con clase dateOfBirth para la fecha -->
+        
         <div class="dateOfBirth">
           <p>Fecha de nacimiento</p>
           <input type="date" name="birthDate" value="1994-11-19" min="1900-01-01" max="2005-08-19">
         </div>
 
-        <!-- Creo el div con clase adress para la para el domicilio -->
+        
         <div class="adress">
           <input type="text" name="homeAdress" id="homeAdress" placeholder="Domicilio" required minlength="2" maxlength="30">
         </div>
 
-        <!-- Creo el label con clase userProfile para el Perfil del usuario -->
+        
         <label class="userProfile">
           <p class="prof">Perfil del usuario</p>
           <input type="radio" name="profile" value="buyer"><p class="personBuyerSeller">Comprador</p>
           <input type="radio" name="profile" value="seller"><p class="personBuyerSeller">Vendedor</p>
         </label>
 
-        <!-- Creo el label con clase preferences para los Intereses -->
+        
         <label class="preferences">
           <p class="userInterest">Intereses</p>
           <label class="prefSpace" for="option1"><input type="checkbox" id="preferences" name="preferences" value="Electro"> Electro</label>
@@ -163,12 +161,12 @@
           <label class="prefSpace" for="option1"><input type="checkbox" id="preferences" name="preferences" value="Vida sana"> Vida sana</label>
         </label>
 
-        <!-- Creo el div con clase picture para la imagen de perfil -->
+        
         <div class="picture">
           <input type="file" name="profilePicture" accept=".jpg">
         </div>
 
-        <!-- Creo el div con clase pass para la contraseña -->
+        
         <div class="pass">
           <label for="passW"></label>
           <input type="password" name="passW" id="passW" placeholder="Ingresá tu contraseña" required minlength="5" maxlength="12">
@@ -178,28 +176,25 @@
           <input type="password" name="passW" id="passW" placeholder="Reingresá tu contraseña" required minlength="5" maxlength="12">
         </div>
 
-        <!-- Creo un botón para "enviar" que por el momento lleva a home -->
+        
         <button class="tapToRegister" type="submit">Enviar</button>
 
-        <!-- Creo un botón reset para eliminar todo -->
+        
         <button class="tapToReset" type="reset">Borrar</button>
 
       </form>
 
-      <!-- Agrego un link para ir a formulario de login en caso de equivocación -->
+      
       <section class="logUser">
         <a href="login.html">¿Ya tenés una cuenta? Ingresá aquí<i class="fa-solid fa-right-to-bracket"></i></a>
       </section>
     </main>
 
 
-<!-- Footer -->
-<!-- Creo un selector de clase para el fondo del footer -->
+
 <footer class="bgWhite">
 
-    <!-- Creo un selector de clase que se utilizará más abajo en las secciones -->
-
-    <!-- Otra sección que repite clase2 -->
+    
       <section class="theBenefits">
         <div><i class="fa-solid fa-credit-card"></i></div>
         <h4>Pagá con tarjeta o en efectivo</h4>
@@ -209,7 +204,7 @@
         </p>
       </section>
 
-    <!-- Otra sección que repite clase2 -->
+    
       <section class="theBenefits">
         <div><i class="fa-solid fa-gift"></i></div>
         <h4>Envío gratis desde $ 2.500</h4>
@@ -219,7 +214,7 @@
         </p>
       </section>
 
-    <!-- Otra sección que repite clase2 -->
+    
       <section class="theBenefits">
         <div><i class="fa-solid fa-user-shield"></i></div>
         <h4>Seguridad, de principio a fin</h4>
@@ -229,7 +224,7 @@
         </p>
       </section>
 
-      <!-- Copyright -->
+      
       <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
   </body>
